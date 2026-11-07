@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Travis Hopper - Homepage">
+      <title>Travis Hopper - Homepage</title>
+      <link rel="icon" href="Travis_Hopper_1.jpg">
+      <style>
+body {
+   margin: 0;
+   padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+   background-color: #002650;
+   background-size: contain;
+   height: 70px;
+   min-width: 768px;
+   position: absolute;
+   top: 0;
+}
+
+@media (min-width: 768px) {
+   header {
+      min-width: 1400px;
+   }
+}
+
+.search-container {
+   display: flex;
+   align-items: center;
+   background-color: #002650;
+   border-radius: 50px;
+   height: 35px;
+   width: 35xp;
+   transition: width 0.4s ease-in-out;
+   overflow: hidden;
+   position: absolute;
+   left: 3px;
+   top: 10px;
+}
+
+@media (min-width: 768px) {
+   .search-container {
+      left: 8px;
+   }
+}
+
+.search-container.active {
+   background-color: #ffffff;
+   width: 140px;
+}
+
+@media (min-width: 768px) {
+   .search-container.active {
+      width: 300px;
+   }
+}
+
+.search-button {
+   color: #ffffff;
+   background: transparent;
+   border: none;
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   flex-shrink: 0;
+}
+
+.search-input {
+   font-family: 'Optima', 'Times New Roman', Times, serif;
+   font-size: 14pt;
+   color: #000000;
+   width: 80px;
+   border: none;
+   outline: none;
+   background: transparent;
+   padding: 10px;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 0.3s ease;
+}
+
+nav {
+   background-color: #002650;
+   background-size: contain;
+   height: 40px;
+   min-width: 768px;
+   position: absolute;
+   top: 70px;
+}
+
+@media (min-width: 768px) {
+   nav {
+      min-width: 1400px;
+   }
+}
+
+.parent-container {
+   display: grid;
+   grid-template-rows: repeat(2, 1.2fr);
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+   height: 1060px;
+   min-width: 768px;
+   position: relative;
+   top: 0;
+}
+
+@media (min-width: 768px) {
+   .parent-container {
+      min-width: 1400px;
+   }
+}
+
+.hero-section {
+   background-image: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(0, 247, 255, 1) 100%);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 430px;
+   min-width: 768px;
+   position: absolute;
+   top: 110px;
+}
+
+@media (min-width: 768px) {
+   .hero-section {
+      min-width: 1400px;
+   }
+}
+
+.hero-section p {
+   font-family: 'Optima', 'Times New Roman', Times, serif;
+   font-size: 14pt;
+   text-indent: 25px;
+   text-align: justify;
+   width: 568px;
+   color: #002650;
+   position: relative;
+   top: 5px;
+   left: 0;
+}
+
+@media (min-width: 768px) {
+   .hero-section p {
+      width: 1200px;
+   }
+}
+
+.content-section {
+   height: 630px;
+   min-width: 768px;
+   position: absolute;
+   top: 540px;
+}
+
+@media (min-width: 768px) {
+   .content-section {
+      min-width: 1400px;
+   }
+}
+
+.content-section video {
+   height: 500px;
+   width: 700px;
+   position: relative;
+   top: -60px;
+   left: 0;
+}
+
+@media (min-width: 768px) {
+   .content-section video {
+      left: 270px;
+   }
+}
+
+.content-background {
+   background-image: url('Live_Performance.jpg');
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   opacity: 0.1;
+   height: 0;
+   width: 0;
+   position: absolute;
+   top: 540px;
+}
+
+.content-background img {
+   height: 630px;
+   min-width: 768px;
+}
+
+@media (min-width: 768px) {
+   .content-background img {
+      min-width: 1400px;
+   }
+}
+
+footer {
+   background-color: #002650;
+   background-size: contain;
+   height: 140px;
+   min-width: 768px;
+   position: absolute;
+   top: 1170px;
+}
+
+@media (min-width: 768px) {
+   footer {
+      min-width: 1400px;
+   }
+}
+      </style>
+   </head>
+
+   <body>
+      <header>
+      </header>
+
+      <div class="search-container" id="searchContainer">
+         <button class="search-buttonn" id="searchButtonn" aria-label="Open Search"></button>
+         <input type="text" class="search-input" id="searchInput" placeholder="Search...">
+      </div>
+
+      <nav>
+      </nav>
+
+      <main>
+         <section class="parent-container">
+            <div class="hero-section">
+               <p>Text</p>
+            </div>
+
+            <div class="content-section">
+               <video controls>
+                  <source src="video.mp4" type="video/mp4">
+               </video>
+            </div>
+         </section>
+      </main>
+
+       <div class="content-background">
+         <img src="Live_Performance.jpg" alt="Live_Performance">
+      </div>
+
+      <footer>
+      </footer>
+   </body>
